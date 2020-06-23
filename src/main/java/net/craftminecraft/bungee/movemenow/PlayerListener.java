@@ -48,7 +48,7 @@ public class PlayerListener implements Listener {
             return;
         }
 
-        String reason = BaseComponent.toLegacyText(ev.getKickReasonComponent());
+        String reason = BaseComponent.toPlainText(ev.getKickReasonComponent());
         String[] moveMsg = plugin.getConfig().getString("message").replace("%kickmsg%", reason).split("\n");
 
         Iterator<String> it = this.plugin.getConfig().getStringList("list").iterator();
