@@ -18,9 +18,8 @@ public class ReloadCommand extends Command {
         if (args.length != 1) {
             sender.sendMessage(new TextComponent("Please use /mmn reload."));
         }
-        switch (args[0]) {
-            case "reload":
-                plugin.loadConfig();
+        if ("reload".equals(args[0])) {
+            plugin.loadConfig();
         }
     }
 }

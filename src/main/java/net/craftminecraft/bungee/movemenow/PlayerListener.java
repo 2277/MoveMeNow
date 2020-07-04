@@ -17,7 +17,7 @@ import net.md_5.bungee.event.EventHandler;
 
 public class PlayerListener implements Listener {
 
-    MoveMeNow plugin;
+    private final MoveMeNow plugin;
 
     public PlayerListener(MoveMeNow plugin) {
         this.plugin = plugin;
